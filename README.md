@@ -30,4 +30,4 @@ I chose this pattern to inform the citizens who will subscribe to the sensors on
 ### 6. Command Pattern =>
 ---
 
-I prefer this pattern because our engineer will have the structure of resetting the values on the apartment at the time it is requested, that is, she is responsible for performing a transaction.
+I prefer this pattern because our engineer will have the structure of resetting the values on the apartment at the time it is requested, that is, he is responsible for performing a transaction.
