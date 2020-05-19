@@ -28,14 +28,17 @@ public abstract class Sensor {
             subscriber.update(this);
         }
     }
-    public boolean getIsFaultSensorState(){
+    public boolean getIsFault(){
         return _isFault;
     }
-    public void setIsFaultSensor(boolean isFault){
+    public void setIsFault(boolean isFault){
         this._isFault = isFault;
     }
     public String getName(){
         return this._name;
+    }
+    public void setName(String name){
+        this._name = name;
     }
     public double getSensorValue(){
         return this._sensorValue;
@@ -45,6 +48,6 @@ public abstract class Sensor {
 
     @Override
     public String toString() {
-        return "Name: "+getName() + "\nValue: "+getSensorValue() + "\nIsFault: "+getIsFaultSensorState()+"\n";
+        return "Name: "+getName() + "\nValue: "+getSensorValue() + "\nIsFault: "+getIsFault()+"\n";
     }
 }

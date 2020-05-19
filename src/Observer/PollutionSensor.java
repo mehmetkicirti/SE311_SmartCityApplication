@@ -1,6 +1,5 @@
 package Observer;
 
-import Observer.Sensor;
 
 public class PollutionSensor extends Sensor {
 
@@ -12,7 +11,7 @@ public class PollutionSensor extends Sensor {
     public void setSensorValue(double sensorValue) {
         this._sensorValue = sensorValue;
         if(checkStatus(sensorValue)){
-            setIsFaultSensor(true);
+            setIsFault(true);
             notifySubscribers();
         }
     }

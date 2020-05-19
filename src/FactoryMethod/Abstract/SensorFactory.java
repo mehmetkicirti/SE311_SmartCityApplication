@@ -2,9 +2,6 @@ package FactoryMethod.Abstract;
 
 import Observer.Sensor;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public abstract class SensorFactory {
     protected String _name;
     protected double _sensorValue;

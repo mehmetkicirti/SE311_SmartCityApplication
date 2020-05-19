@@ -33,7 +33,7 @@ public class Apartment implements INeighborhood,ISensorDetail{
     public int getTotalIsFaultSensors() {
         int total = 0;
         for(Sensor sensor : _apartmentSensors){
-            if (!sensor.getIsFaultSensorState()) continue;
+            if (!sensor.getIsFault()) continue;
             total+=1;
         }
         return total;

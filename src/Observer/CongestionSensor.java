@@ -10,7 +10,7 @@ public class CongestionSensor extends Sensor {
     public void setSensorValue(double sensorValue) {
         this._sensorValue = sensorValue;
         if(checkStatus(sensorValue)){
-            setIsFaultSensor(true);
+            setIsFault(true);
             notifySubscribers();
         }
     }

@@ -39,9 +39,11 @@ public class Main {
 
         Citizen mehmet = new Citizen("Mehmet Aydın","KICIRTI");
         Citizen ozan = new Citizen("Mustafa Ozan","GÜNEY");
+        Citizen merve = new Citizen("Merve","TELLİ");
         //mehmet subscribed to sensors if there is any modified into sensor, it will be send notified message
         mehmet.setSensor(sensors);
         ozan.setSensor(sensors);
+        merve.setSensor(sensors);
 
         pollutionSensor.attach(mehmet);
         pollutionSensor.attach(ozan);
