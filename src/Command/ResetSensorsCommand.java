@@ -12,9 +12,11 @@ public class ResetSensorsCommand implements ICommand{
     }
     @Override
     public void execute() {
+        System.out.println("Sensors are resetting now by engineer..");
         for(Sensor sensor :_sensors){
             sensor.setSensorValue(15);
-            sensor.setIsFaultSensor(false);
+            sensor.setIsFault(false);
         }
+        System.out.println("Sensors were fixed by engineer..\n");
     }
 }
