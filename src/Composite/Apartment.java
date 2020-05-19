@@ -5,7 +5,7 @@ import Observer.*;
 import java.util.List;
 
 //Leaf object
-public class Apartment implements INeighborhood,ISensorDetail{
+public class Apartment implements INeighborhood{
     private String _name;
     private List<Sensor> _apartmentSensors;
 
@@ -38,8 +38,6 @@ public class Apartment implements INeighborhood,ISensorDetail{
         }
         return total;
     }
-
-    @Override
     public List<Sensor> getSensors() {
         return _apartmentSensors;
     }
