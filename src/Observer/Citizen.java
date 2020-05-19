@@ -22,13 +22,6 @@ public class Citizen implements ISubscriber {
         this._sensors = sensors;
     }
 
-    public void displaySubscribedSensor(){
-        System.out.println(toString()+" these subscribed sensors => ");
-        for(Sensor sensor : _sensors){
-            System.out.println("\nName : "+sensor.getName() + " Value :" +sensor.getSensorValue());
-        }
-    }
-
     public String getName(){
         return _name;
     }
