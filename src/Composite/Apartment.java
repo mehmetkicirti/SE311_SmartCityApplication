@@ -41,4 +41,8 @@ public class Apartment implements INeighborhood{
     public List<Sensor> getSensors() {
         return _apartmentSensors;
     }
+
+    public void setSensors(List<Sensor> sensors){
+        this._apartmentSensors = sensors;
+    }
 }

@@ -8,9 +8,9 @@ import java.util.List;
 public class Pole implements INeighborhood{
     private String _name;
     private List<Sensor> _poleSensors;
-    public Pole(String name,List<Sensor> poleSensor){
+    public Pole(String name,List<Sensor> poleSensors){
         _name =name;
-        _poleSensors = poleSensor;
+        _poleSensors = poleSensors;
     }
 
     @Override
@@ -39,5 +39,9 @@ public class Pole implements INeighborhood{
     }
     public List<Sensor> getSensors() {
         return _poleSensors;
+    }
+
+    public void setSensors(List<Sensor> sensors){
+        this._poleSensors = sensors;
     }
 }
