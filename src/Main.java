@@ -49,6 +49,13 @@ public class Main {
         pollutionSensor.attach(ozan);
         pollutionSensor.setSensorValue(101);
 
+        pollutionSensor.detach(ozan);
+        pollutionSensor.attach(merve);
+        pollutionSensor.setSensorValue(106);
+
+        noiseSensor.attach(ozan);
+        noiseSensor.attach(merve);
+        noiseSensor.setSensorValue(120);
 
         monitor.showStatus();
 
