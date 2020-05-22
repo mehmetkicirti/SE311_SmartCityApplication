@@ -3,6 +3,7 @@ package Observer;
 import java.util.ArrayList;
 import java.util.List;
 
+//Concrete Observer
 public class Citizen implements ISubscriber {
     private String _name;
     private String _surname;

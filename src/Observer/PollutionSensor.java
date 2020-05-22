@@ -1,6 +1,6 @@
 package Observer;
 
-
+//Concrete Subject
 public class PollutionSensor extends Sensor {
 
     public PollutionSensor(String name, double sensorValue) {

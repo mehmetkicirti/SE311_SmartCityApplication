@@ -2,12 +2,7 @@ package Iterator;
 
 import Composite.INeighborhood;
 
-/*Iterator Pattern =>
-    Nesne bütünü içerisindeki elemanlarının nasıl yapılandıklarının bir önemi yoktur.Desenin
-    amacı söz konusu nesne bütünü bastan sona dolasabilmektedir.
-
-*/
-//Iterator => Nesnein nasıl hareket etmesi gerektiği gibi kriterlerin sorumluluklarını Iterator nesnesine yükler
+//Iterator => Loads the responsibilities of the criteria, such as how the object should move, into the Iterator object
 public interface ICityIterator {
     void first();
     boolean isContinue();

@@ -3,6 +3,7 @@ package Observer;
 import java.util.ArrayList;
 import java.util.List;
 
+//Subject and also Reciever for command pattern
 public abstract class Sensor {
     private String _name;
     protected double _sensorValue;
@@ -43,6 +44,7 @@ public abstract class Sensor {
     public double getSensorValue(){
         return this._sensorValue;
     }
+    // examine this sensors values to send notify
     public abstract void setSensorValue(double sensorValue);
     protected abstract boolean checkStatus(double sensorValue);
 

@@ -1,5 +1,6 @@
 package Observer;
 
+//Concrete Subject
 public class CongestionSensor extends Sensor {
 
     public CongestionSensor(String name, double sensorValue) {

@@ -2,7 +2,7 @@ package Iterator;
 
 import Composite.INeighborhood;
 
-//ConcreteIterator implemente eder Iterator interfacini amac her bir geçişteki elementlere erişmek
+//ConcreteIterator and implemented by ICityIterator interface aimed that each object to get values.
 public class CityIterator implements ICityIterator{
     private ICityAggregate _collection;
     private int currentIndex = 0;

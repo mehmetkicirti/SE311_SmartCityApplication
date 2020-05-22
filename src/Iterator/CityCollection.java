@@ -5,7 +5,7 @@ import Composite.INeighborhood;
 import java.util.ArrayList;
 import java.util.List;
 
-//Implements Aggregate Interface ve amacı createIterator ile icinde bulundurdugu list elemanlarını göndermek
+//Implements Aggregate Interface and purpose of  with createIterator  having list elements to send.
 public class CityCollection implements ICityAggregate{
     private List<INeighborhood> _cityCollection;
 

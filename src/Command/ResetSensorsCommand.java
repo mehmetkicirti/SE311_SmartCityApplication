@@ -4,6 +4,7 @@ import Observer.Sensor;
 
 import java.util.List;
 
+//Concerete Command
 public class ResetSensorsCommand implements ICommand{
     private List<Sensor> _sensors;
 
